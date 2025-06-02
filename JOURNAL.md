@@ -31,3 +31,9 @@ Today I learned KiCAD and started writing the schematics for the Polaris II flig
 I also labeled some pins for the MPU
 
 ![alt text](image-1.png)
+
+# Day 9 June 01
+Today, I didn't work much because of excessive homework. However, I did do a lot of research about pyrotechnic channels and looked for nice screw terminals. Here's my progress today:
+![alt text](image-2.png)
+
+I mostly analyzed other schematics to learn more about best practice. The diode is to help protect against things like reverse polarity. I used an N-MOSFET to push 12v into a screw terminal, which will be used to activate any pyrotechnic devices. I used a 10,000 ohm resistor which will make it much safer. I also set up some stuff for general output stuff which will be used to run the 5 servos we're using.
