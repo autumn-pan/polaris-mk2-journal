@@ -37,3 +37,11 @@ Today, I didn't work much because of excessive homework. However, I did do a lot
 ![alt text](image-2.png)
 
 I mostly analyzed other schematics to learn more about best practice. The diode is to help protect against things like reverse polarity. I used an N-MOSFET to push 12v into a screw terminal, which will be used to activate any pyrotechnic devices. I used a 10,000 ohm resistor which will make it much safer. I also set up some stuff for general output stuff which will be used to run the 5 servos we're using.
+
+# Day 10 June 02
+The first thing I did was attempt to draw the schematics for the battery.
+![alt text](image-4.png)
+It uses a buck converter to convert 12V to 5V. I used a Schottky diode to help protect against reverse polarity. It will probably cause some amount of voltage drop, and I'm unsure at the current moment what the consequences of that will be. That's it for the battery. I then implemented an LED which is self explanatory:
+![alt text](image-6.png)
+On the bottom is a piezo buzzer(?) and it is controlled using an N MOSFET because it needs 5v instead of the supplied 3v.
+Time spent: 2hr
