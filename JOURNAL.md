@@ -1,3 +1,8 @@
+# Day 0, May 21
+When the rocket lands, it may still have a lot of kinetic energy, which is why we need landing legs with shock absorbers. Today we discussed what shock absorbers to purchase and settled on ones from McMaster.
+
+I read through kalmanfiltertutorial among other sites to gain a rough understand of a kalman filter, which will be used later on to sort out sensor noise. I was walked through the alpha-beta-gamma filter and learned about multivariate gaussians. It was quite challenging to understand, but a kalman filter is essentially a recursive algorithm that takes the weighted average of different equations and sensor readings to determine to the best of its ability, the state of your rocket.
+Time spent: 4hr
 # Day 1 May 22
 Before I work on Polaris Mk. 2, the flight computer on the actual rocket, I want to create the groundwork for this project by first writing a simpler flight computer so that I can better plan for this one. I initialized a PlatformIO project and imported the necessary libraries. I started out by removing unnecessary code from main.cpp. Then, I imported the BMP390 Barometer and BMI088 IMU. These two sensors will be used to find the position, velocity, and orientation of the rocket, which is important for nearly every maneuver. Of course, sensors aren't perfect so I'll have to implement something called a Kalman filter later on. I finished a very primitive version of a sensor handler class. Total time spent: 1hr
 # Day 2 May 24
@@ -9,9 +14,8 @@ This was the day when I finally implemented the Kalman filter. So, when you try 
 # Day 5 May 27
 Today I began testing for my kalman filter. I used my statesim project, which modeled kinematics and sensor noise, to test this. I imported my kalman filter and deps, then I learned and installed matplotplusplus to graph the information. Immediately, I found that my kalman filter did not function correctly and outputted nan, which I fixed by removing some zeroes from the covariant matrices. Next, the kalman filter was off by orders of magnitude, which was the result of an upside-down state transition matrix. Finally, I managed to get it to work at just over 50% reduced noise compared to raw sensor data.
 
-img here
-
-exaggerated img here
+![alt text](image-11.png)
+![alt text](image-12.png)
 
 Total time spent: 6 hrs
 # Day 6 May 28
@@ -121,3 +125,15 @@ Time Spent: 10hr
 
 # Day 30 July 17
 I looked for others to help review my schematics so that there wouldnt be a failure later on. I chose not to create the pcb until it had been reviewed by someone else. It was pointed oiut to me that my new pyro channels were not correctly configured and would be quite problematic. So, I will look into the pyro channels tomorrow and create a working design.
+Time spent: 1hr
+# Day 31 July 18
+I redesigned the pyro channels today.
+![alt text](image-8.png)
+Someone pointed out that I would need to deal with ringing, so I added 300 Ohm resistors to the gate. I added a diode for voltage spikes and switched around the mosfet. I did the same for the buzzer mosfet too.
+![alt text](image-9.png)
+I also switched the buck converter for a battery back to an LM2596
+![alt text](image-10.png)
+This is much easier to solder and is something I'm more confident about. It was also easier to organize, looks cleaner, and is better known. I also got these new components reviewed as well, all seems to be good.
+I did review the datasheets for both buck converters considered. Furthermore, I worked on decreasing the BOM. PLA should make it a lot cheaper than the PETG we've been planning, but it might fail.
+
+Time Spent: 4hr
