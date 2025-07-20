@@ -117,7 +117,6 @@ Today I implemented the previous mathematical framework I had just created using
  ![alt text](image-7.png)
 
 The rocket will of course have propulsive landing. To do this, I will have thrust reversers that can essentially cut off thrust on demand. This is how I will throttle a solid rocket motor. However, few materials can survive that kind of environment. For a while, that material has been graphite. Although it is abrasive and soft, it can survive extreme temperatures. Recently however, a new material has come up: high temperature reinforced aerogel. This can survive well above the necessary temperatures and advertises that it can be used in high stress environments too, like industrial furnaces. The specific product is SHT1300. Aerogel has excellent thermal shock resistance and low conductivity from my research, so this would be idea. I thoroughly researched this new material, and came to the conclusion that although it is an excellent insulator and a solid option, the short burn time could actually be endured by something like stainless steel 310. It has good thermal shock resistance meaning it might not crack under the high temperatures. Furthermore, I could easily apply a thick layer of ablative coating to help protect it. If I managed to get stainless steel 310 plates, they would be a surprising ideal and very simple solution to the problem. I also made adjustments to the flight computer's code and cleaned the code to be more maintainable.
-
 Time Spent: 10hr
 
 # Day 30 July 17
