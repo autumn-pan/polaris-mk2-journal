@@ -1,3 +1,4 @@
+97 Hrs
 # Day 0, May 21
 When the rocket lands, it may still have a lot of kinetic energy, which is why we need landing legs with shock absorbers. Today we discussed what shock absorbers to purchase and settled on ones from McMaster.
 
@@ -131,9 +132,33 @@ I redesigned the pyro channels today.
 ![alt text](image-8.png)
 Someone pointed out that I would need to deal with ringing, so I added 300 Ohm resistors to the gate. I added a diode for voltage spikes and switched around the mosfet. I did the same for the buzzer mosfet too.
 ![alt text](image-9.png)
-I also switched the buck converter for a battery back to an LM2596
+I also switched the buck converter for the battery back to an LM2596
 ![alt text](image-10.png)
 This is much easier to solder and is something I'm more confident about. It was also easier to organize, looks cleaner, and is better known. I also got these new components reviewed as well, all seems to be good.
 I did review the datasheets for both buck converters considered. Furthermore, I worked on decreasing the BOM. PLA should make it a lot cheaper than the PETG we've been planning, but it might fail.
 
 Time Spent: 4hr
+# Day 32 July 20 
+I switched the buck converter to the TSP563200DDCR instead of the LM2596 because it has lower noise. I spent a lot of time looking for this one, as I realized that the LM2596 was obselete and too noisy for use in this rocket. The TSP563200 should suffice instead. I spent the day working on this, and also got the pcb editor set up with every net and footprint.
+
+Buck converter
+![alt text](image-13.png)
+
+Finished schematic
+![alt text](image-14.png)
+
+Time spent: 6hr
+# Day 33/34 July 21 and July 22
+I spent the day setting up the first iteration of the pcb. I was new to KiCAD PCB editor so I spent a lot of time learning to use it, and began my first draft of the PCB. After a few hours, I had this:
+![alt text](image-15.png)
+This is unsatisfactory because it's messy, too bloated, and hard to maintain, so I restarted.
+End result:
+![alt text](image-16.png)
+
+This pcb layout organizes the components much better and seperates the pyro channels from the servos. There is no LED so the buzzer will serve as a way of debugging code. I added some silkscreen text as well.
+
+![alt text](image-17.png)
+![alt text](image-18.png)
+
+In the end, I'm quite happy with now this pcb turned out.
+Time spent: 17hr
