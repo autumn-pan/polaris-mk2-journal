@@ -5,8 +5,8 @@ teensy 4.1, 35.49, https://www.amazon.com/PJRC-Cortex-M7-Processor-iMXRT1062-Wit
 BMI088, 5.23, https://www.digikey.com/en/products/detail/bosch-sensortec/BMI088/8634936, reading inertial data
 BMP390, 3.15, https://www.digikey.com/en/products/detail/bosch-sensortec/BMP390/16164577, reading altitude
 2 wagos, 8.72, https://www.digikey.com/en/products/detail/wago-corporation/2601-1104/17123797?gQT=1, connecting pyro channels
-xt30u, 0.72, https://www.tme.eu/en/details/xt30upb-m/dc-power-connectors/amass/?utm_source=octopart.com&utm_medium=cpc&utm_campaign=compare-2025-05-27
-8 servo pins, 7.84, https://www.digikey.com/en/products/detail/amphenol-icc-commercial-products-/G800W305018EU/13683151?gQT=1, connecting the servo pins gYYcCWmiTlFbvQRmeAibuGr2aKcAJe1jHgsTpN884Cw8oW3Wdzy9pyBCNqPCnOqHTNP_x6Fle7wReQ7mRdR2z7OfN7cbB16PEj693bv_CHA8dPjz7R4eYi3YXPl6JLQZPpEc5AUyUE4qfdWJEHZHBKxWxkeUBxW_zQSyBH26a2wwzBQrBroeJZtvlT3Dse5Vvb0nTMPKvHQNda3Bwg9G1l8X9cfD_IDGxEFLb2xPnJ_cveE6dFqdV4_nxm
+xt30u, 0.72, https://www.tme.eu/en/details/xt30upb-m/dc-power-connectors/amass/?utm_source=octopart.com&utm_medium=cpc&utm_campaign=compare-2025-05-27, connecting the battery to
+8 servo pins, 7.84, https://www.digikey.com/en/products/detail/amphenol-icc-commercial-products-/G800W305018EU/13683151?gQT=1, connecting the servo pins 
 5 mosfets, 4.00, https://www.digikey.com/en/products/detail/diodes-incorporated/DMN1019UVT-7/5126835, controlling pyro channels
 printed circuit board (self funded), est 15.00, https://jlcpcb.com/, mounting flight computer devices on
  3ml syringes, 11.20, https://www.mcmaster.com/7510A651/, dampening landing legs
