@@ -15,8 +15,8 @@ This was the day when I finally implemented the Kalman filter. So, when you try 
 # Day 5 May 27
 Today I began testing for my kalman filter. I used my statesim project, which modeled kinematics and sensor noise, to test this. I imported my kalman filter and deps, then I learned and installed matplotplusplus to graph the information. Immediately, I found that my kalman filter did not function correctly and outputted nan, which I fixed by removing some zeroes from the covariant matrices. Next, the kalman filter was off by orders of magnitude, which was the result of an upside-down state transition matrix. Finally, I managed to get it to work at just over 50% reduced noise compared to raw sensor data.
 
-![alt text](image-11.png)
-![alt text](image-12.png)
+![alt text](pics/image-11.png)
+![alt text](pics/image-12.png)
 
 Total time spent: 6 hrs
 # Day 6 May 28
@@ -31,23 +31,23 @@ Total time spent: 1hr
 # Day 8 May 31
 Today I learned KiCAD and started writing the schematics for the Polaris II flight computer that will be used for this rocket. It has 3 pyro channels, 2 BMI088 IMUs, and a BMP390 Barometer. The pyro channels will be used to fire ignitors for tasks like stage separation and deploying the landing legs. I chose the BMI088 because of its low cost, high precision, and its ability to handle impacts. Although I considered the BMI270 for its extremely low power consumption, the difference was negligible in my case because I am using nice LiPo batteries which is more than enough. The BMP390 was the most precise barometer I could find for this project, with its altimeter being +- 0.1m. This is amazing, and will be further improved when coupled with my kalman filter. Today however, I mainly worked on learning how to use KiCad and importing the necessary libraries. I also made the schematics for the BMI088
 
-![alt text](image.png)
+![alt text](pics/image.png)
 
 I also labeled some pins for the MPU
 
-![alt text](image-1.png)
+![alt text](pics/image-1.png)
 
 # Day 9 June 01
 Today, I didn't work much because of excessive homework. However, I did do a lot of research about pyrotechnic channels and looked for nice screw terminals. Here's my progress today:
-![alt text](image-2.png)
+![alt text](pics/image-2.png)
 
 I mostly analyzed other schematics to learn more about best practice. The diode is to help protect against things like reverse polarity. I used an N-MOSFET to push 12v into a screw terminal, which will be used to activate any pyrotechnic devices. I used a 10,000 ohm resistor which will make it much safer. I also set up some stuff for general output stuff which will be used to run the 5 servos we're using.
 
 # Day 10 June 02
 The first thing I did was attempt to draw the schematics for the battery.
-![alt text](image-4.png)
+![alt text](pics/image-4.png)
 It uses a buck converter to convert 12V to 5V. I used a Schottky diode to help protect against reverse polarity. It will probably cause some amount of voltage drop, and I'm unsure at the current moment what the consequences of that will be. That's it for the battery. I then implemented an LED which is self explanatory:
-![alt text](image-6.png)
+![alt text](pics/image-6.png)
 On the bottom is a piezo buzzer(?) and it is controlled using an N MOSFET because it needs 5v instead of the supplied 3v.
 Time spent: 2hr
 
@@ -119,7 +119,7 @@ Today I implemented the previous mathematical framework I had just created using
  Time Spent: 1.5hr
  # Days 28-29, July 15/16
  I worked a lot of planning and the PCB. I redid the schematics for both of the sensors, redid the pyro channels, and switched to a new converter. I readded LEDs and a buzzer. I also switched to a real MOSFET. I also switched from screw terminals to WAGOs. The electronic schematics were essentially overhauled.
- ![alt text](image-7.png)
+ ![alt text](pics/image-7.png)
 
 The rocket will of course have propulsive landing. To do this, I will have thrust reversers that can essentially cut off thrust on demand. This is how I will throttle a solid rocket motor. However, few materials can survive that kind of environment. For a while, that material has been graphite. Although it is abrasive and soft, it can survive extreme temperatures. Recently however, a new material has come up: high temperature reinforced aerogel. This can survive well above the necessary temperatures and advertises that it can be used in high stress environments too, like industrial furnaces. The specific product is SHT1300. Aerogel has excellent thermal shock resistance and low conductivity from my research, so this would be idea. I thoroughly researched this new material, and came to the conclusion that although it is an excellent insulator and a solid option, the short burn time could actually be endured by something like stainless steel 310. It has good thermal shock resistance meaning it might not crack under the high temperatures. Furthermore, I could easily apply a thick layer of ablative coating to help protect it. If I managed to get stainless steel 310 plates, they would be a surprising ideal and very simple solution to the problem. I also made adjustments to the flight computer's code and cleaned the code to be more maintainable.
 Time Spent: 10hr
@@ -129,11 +129,11 @@ I looked for others to help review my schematics so that there wouldnt be a fail
 Time spent: 1hr
 # Day 31 July 18
 I redesigned the pyro channels today.
-![alt text](image-8.png)
+![alt text](pic/simage-8.png)
 Someone pointed out that I would need to deal with ringing, so I added 300 Ohm resistors to the gate. I added a diode for voltage spikes and switched around the mosfet. I did the same for the buzzer mosfet too.
-![alt text](image-9.png)
+![alt text](pics/image-9.png)
 I also switched the buck converter for the battery back to an LM2596
-![alt text](image-10.png)
+![alt text](pics/image-10.png)
 This is much easier to solder and is something I'm more confident about. It was also easier to organize, looks cleaner, and is better known. I also got these new components reviewed as well, all seems to be good.
 I did review the datasheets for both buck converters considered. Furthermore, I worked on decreasing the BOM. PLA should make it a lot cheaper than the PETG we've been planning, but it might fail.
 
@@ -142,23 +142,23 @@ Time Spent: 4hr
 I switched the buck converter to the TSP563200DDCR instead of the LM2596 because it has lower noise. I spent a lot of time looking for this one, as I realized that the LM2596 was obselete and too noisy for use in this rocket. The TSP563200 should suffice instead. I spent the day working on this, and also got the pcb editor set up with every net and footprint.
 
 Buck converter
-![alt text](image-13.png)
+![alt text](pics/image-13.png)
 
 Finished schematic
-![alt text](image-14.png)
+![alt text](pics/image-14.png)
 
 Time spent: 6hr
 # Day 33/34 July 21 and July 22
 I spent the day setting up the first iteration of the pcb. I was new to KiCAD PCB editor so I spent a lot of time learning to use it, and began my first draft of the PCB. After a few hours, I had this:
-![alt text](image-15.png)
+![alt text](pics/image-15.png)
 This is unsatisfactory because it's messy, too bloated, and hard to maintain, so I restarted.
 End result:
-![alt text](image-16.png)
+![alt text](pics/image-16.png)
 
 This pcb layout organizes the components much better and seperates the pyro channels from the servos. There is no LED so the buzzer will serve as a way of debugging code. I added some silkscreen text as well.
 
-![alt text](image-17.png)
-![alt text](image-18.png)
+![alt text](pics/image-17.png)
+![alt text](pics/image-18.png)
 
 In the end, I'm quite happy with now this pcb turned out.
 Time spent: 17hr
