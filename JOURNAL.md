@@ -1,4 +1,6 @@
-97 Hrs
+Autumn Pan -- Lepton Rocket Logs -- 97 hours total
+PCB, Code, and Design
+
 # Day 0, May 21
 When the rocket lands, it may still have a lot of kinetic energy, which is why we need landing legs with shock absorbers. Today we discussed what shock absorbers to purchase and settled on ones from McMaster.
 
@@ -53,7 +55,7 @@ Time spent: 2hr
 
 # June 07/08/09 (Offline Work)
 These two weeks, I am between studying rigorously for finals and relaxing for the first week of summer break. However, I did do some calculations during this time. I know that mass will be lost over time as fuel burns, and it wont be linear. I assume that the thrust curve of a rocket motor corresponds to mass lost over time roughly, so I derived approximation formulas, first linearly. I used multivariable optimization to do so, and moved to nth degree polynomials. It was around this time that I became aware of Runge's phenomenon, but I'll consider that later. If I can approximate the curve well, then this rocket will have more accurate information.
-Time spent: 5hr
+Time spent: 2,2,1hr
 
 # Day 11, June 20
 I added a state detection system which can detect apogee, launch, and landing. It does so by storing the filtered velocity and comparing it this certain thresholds to get an idea of the true velocity. If the velocity is suddenly negative, that means that its falling and has theefore just passed its apogee. Likewise, if it suddenly spikes upwards, then it has launched. If it is suddenly close to zero, then it has landed. It checks this every cycle to deterine the state of the rocket with a few ms of latency.
@@ -64,7 +66,7 @@ I spent a significant amount of time away from the codebase and instead research
 
 A scheduler is much more sophisticated than this. While a super loop can get held up in a sort of traffic, namely less important tasks taking a long time to execute and blocking crucial tasks, schedulers carefully manages task execution and crucially allows for multitasking. However, a scheduler is much more complex than a super loop and has some overhead. I may not even have to time to implement a full scheduler so I will continue working on other subsystems and see what opportunity I have. One of my greatest concerns however, is that of logging. Apparently logging can take a significant amount of time and this could block or delay things like TVC or the kalman filter from working in time, and could cause performance issues without some sort of scheduler.
 
-Time spent: 5-10 Hours
+Time spent: 3,2,3 Hours
 
 # Day 15 June 26
 I spent most of today looking through my code and for errors. One particular bug that I had known about was one with the logger, where I would log important events and sensor information together in one file, which is a bad idea if you're trying to graph anything. I split the logging into two simultaneous files. This may raise some performance concerns, but we'll deal with those ones the flight computer is actually built.
@@ -122,7 +124,7 @@ Today I implemented the previous mathematical framework I had just created using
  ![alt text](pics/image-7.png)
 
 The rocket will of course have propulsive landing. To do this, I will have thrust reversers that can essentially cut off thrust on demand. This is how I will throttle a solid rocket motor. However, few materials can survive that kind of environment. For a while, that material has been graphite. Although it is abrasive and soft, it can survive extreme temperatures. Recently however, a new material has come up: high temperature reinforced aerogel. This can survive well above the necessary temperatures and advertises that it can be used in high stress environments too, like industrial furnaces. The specific product is SHT1300. Aerogel has excellent thermal shock resistance and low conductivity from my research, so this would be idea. I thoroughly researched this new material, and came to the conclusion that although it is an excellent insulator and a solid option, the short burn time could actually be endured by something like stainless steel 310. It has good thermal shock resistance meaning it might not crack under the high temperatures. Furthermore, I could easily apply a thick layer of ablative coating to help protect it. If I managed to get stainless steel 310 plates, they would be a surprising ideal and very simple solution to the problem. I also made adjustments to the flight computer's code and cleaned the code to be more maintainable.
-Time Spent: 10hr
+Time Spent: 5,5hr
 
 # Day 30 July 17
 I looked for others to help review my schematics so that there wouldnt be a failure later on. I chose not to create the pcb until it had been reviewed by someone else. It was pointed oiut to me that my new pyro channels were not correctly configured and would be quite problematic. So, I will look into the pyro channels tomorrow and create a working design.
@@ -161,5 +163,5 @@ This pcb layout organizes the components much better and seperates the pyro chan
 ![alt text](pics/image-18.png)
 
 In the end, I'm quite happy with now this pcb turned out.
-Time spent: 17hr
+Time spent: 13,4hr
 
