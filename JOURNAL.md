@@ -1,4 +1,4 @@
-Autumn Pan -- Lepton Rocket Logs -- 97 hours total
+Autumn Pan -- Lepton Rocket Logs -- Approx 104 hours
 PCB, Code, and Design
 
 # Day 0, May 21
@@ -23,7 +23,7 @@ Today I began testing for my kalman filter. I used my statesim project, which mo
 Total time spent: 6 hrs
 # Day 6 May 28
 Today I learned and tested a complimentary filter, which was difficult to tune. It ended up being around 60% the effectiveness of a kalman filter. It runs more efficiently with less instructions to the MPU, but I have a teensy 4.1 so it won't matter. I'll stick to the kalman filter because its simply more effective and I can handle the extra strain.
-
+Time spent: 4hr
 # Day 7 May 30
 However, when I ran the filter for 10000 cycles, things started to break down. I first switched the filter to using doubles instead of floats, which decreased noise by 20%. Then, I set dt = 0.005 to simulate real cycle times. This brought the kalman filter back to normal. I set the filter to run for 1000 cycles with cycle time 5ms, and got this result:
 
@@ -38,6 +38,7 @@ Today I learned KiCAD and started writing the schematics for the Polaris II flig
 I also labeled some pins for the MPU
 
 ![alt text](pics/image-1.png)
+Time spent: 4hr
 
 # Day 9 June 01
 Today, I didn't work much because of excessive homework. However, I did do a lot of research about pyrotechnic channels and looked for nice screw terminals. Here's my progress today:
@@ -45,6 +46,7 @@ Today, I didn't work much because of excessive homework. However, I did do a lot
 
 I mostly analyzed other schematics to learn more about best practice. The diode is to help protect against things like reverse polarity. I used an N-MOSFET to push 12v into a screw terminal, which will be used to activate any pyrotechnic devices. I used a 10,000 ohm resistor which will make it much safer. I also set up some stuff for general output stuff which will be used to run the 5 servos we're using.
 
+Time spent: 2.5hr
 # Day 10 June 02
 The first thing I did was attempt to draw the schematics for the battery.
 ![alt text](pics/image-4.png)
