@@ -17,7 +17,7 @@ CAD
 # CAD Files
 View the CAD files in ./cad, or preferably in the onshape document
 [Link](https://cad.onshape.com/documents/b936ec593d2f13f8b4301d6a/w/959d82f8ce1a388125efc6ac/e/d0e27454aa34d56363c8f698)
-# BOM -- Total Cost: $386.27
+# BOM -- Total Cost: $386.27, $10.41 after 6.25% tax
 | Name                          | Cost   | Link                                                                                                                                                                                                                                                                                                                                                      | Purpose                                           |
 |-------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Ignitor 20 pack               | 29.60  | [Link](https://electricmatch.com/blasting-law-enforcement-military/see/6/7/mjg-firewire-initiator--standard)                                                                                                                                                                                                       | Igniting pyrotechnic components like motors      |
