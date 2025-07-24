@@ -1,6 +1,6 @@
 ---
 title: "Lepton Rocket"
-author: "Umit Selvitopu"
+author: "Umit Selvitopu/Autumn Pan"
 description: "An F-Class propulsively landing rocket"
 created_at: "2025-5-30"
 ---
