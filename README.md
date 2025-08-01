@@ -17,7 +17,7 @@ CAD
 # CAD Files
 View the CAD files in ./cad, or preferably in the onshape document
 [Link](https://cad.onshape.com/documents/b936ec593d2f13f8b4301d6a/w/959d82f8ce1a388125efc6ac/e/d0e27454aa34d56363c8f698)
-# BOM -- Total Cost: $273.14, $290.89 after tax
+# BOM -- Total Cost: $279.40, $297.56 after tax
 | Name                          | Cost   | Link                                                                                                                                                                                                                                                                                                                                                      | Purpose                                           |
 |-------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Teensy 4.1                    | 35.49  | [Link](https://www.amazon.com/PJRC-Cortex-M7-Processor-iMXRT1062-Without/dp/B088JY7P2H/ref=asc_df_B088JY7P2H?mcid=8ae789eb80d63b429a8b6233ef5751e7&hvocijid=17548775748303405856-B088JY7P2H-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=730312820598&hvpos=&hvnetw=g&hvrand=17548775748303405856&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001697&hvtargid=pla-2281435177898&psc=1) | Processing information and running code          |
@@ -44,7 +44,8 @@ View the CAD files in ./cad, or preferably in the onshape document
 | 2x 22 uF Capacitor | 0.05 | https://www.digikey.com/en/products/detail/murata-electronics/GRM188R61A226ME15D/5027561 | Smoothing voltage with the TSP
 | F15-0 Estes Rocket Motor| 22.95 | https://fusionscalehobbies.com/products/estes-f15-0-29mm-engines-2pk?variant=44043735826688&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_campaign=gs-2022-04-29&utm_source=google&utm_medium=smart_campaign&gad_source=1&gad_campaignid=17519716778&gbraid=0AAAAAoZqEGAQWxo04MMDcF5MdhRO7ZtAf&gclid=Cj0KCQjwhafEBhCcARIsAEGZEKLQsLOV6peTK6vGFhD8sOgo2fjzVBQZQKSE6nMh4wYBtARwmmqMCWkaAuOZEALw_wcB | Launching the rocket |
 |Solder paste | 4.36 | https://www.aliexpress.us/item/3256809207808464.html? | soldering SMDs to the PCB |
-| Threaded inserts | 1.73 | https://www.aliexpress.us/item/3256803396040989.html? | TVC assembly
+| Threaded inserts | 1.73 | https://www.aliexpress.us/item/3256803396040989.html? | TVC assembly |
+| Bearings | 6.26 | https://www.aliexpress.us/item/3256802138888272.html? | TVC Assembly |
 
 Notes on our vendors:
 - Teensy 4.1 is necessary for its high speed, reliability, and ease of use. It is necessary for advanced avionics like this project. However, it's difficult to optimize the price of, and the cheapest price from a trusted vendor was about $31. Considering free shipping however, the cheapest vendor was on Amazon and was $35. Aliexpress was thoroughly considered and while vendors there were considered, they were found to be misleading and/or untrustworthy. A bad MPU is not only a waste of money and time, but can also be a violation of safety guidelines.
