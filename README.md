@@ -50,4 +50,4 @@ Notes on our vendors:
 - The servos we found are the only servos strong enough that can fit inside the rocket. Any larger servos could introduce significant problems during flight. These are also necessary because it is for a guidance system, and therefore needs to be fast and respond quickly. We found the cheapest servos possible.
 - The servos for thrust reversing can be cheaper, so we got the cheapest servos from Aliexpress that are still strong enough to do their job. This cut costs by upwards of $40. The servos could not be cheaper than this.
 - We were promised that Hack Club would supply one pack of Estes F15-0 motors by Acon
-https://cdn.discordapp.com/attachments/1360075491398389761/1400606541303779389/image.png?ex=688d3ffd&is=688bee7d&hm=2350f5cc678da104088a2a8371767a31ece720279ad59f4e9aafc8f320f27b8b&
+![alt text](image-5.png)
