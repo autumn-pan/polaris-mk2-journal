@@ -17,7 +17,7 @@ CAD
 # CAD Files
 View the CAD files in ./cad, or preferably in the onshape document
 [Link](https://cad.onshape.com/documents/b936ec593d2f13f8b4301d6a/w/959d82f8ce1a388125efc6ac/e/d0e27454aa34d56363c8f698)
-# BOM -- Total Cost: $267.05, $284.41 after tax
+# BOM -- Total Cost: $288.5, $307.25 after tax
 | Name                          | Cost   | Link                                                                                                                                                                                                                                                                                                                                                      | Purpose                                           |
 |-------------------------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Teensy 4.1                    | 35.49  | [Link](https://www.amazon.com/PJRC-Cortex-M7-Processor-iMXRT1062-Without/dp/B088JY7P2H/ref=asc_df_B088JY7P2H?mcid=8ae789eb80d63b429a8b6233ef5751e7&hvocijid=17548775748303405856-B088JY7P2H-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=730312820598&hvpos=&hvnetw=g&hvrand=17548775748303405856&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001697&hvtargid=pla-2281435177898&psc=1) | Processing information and running code          |
