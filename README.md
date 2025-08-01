@@ -46,7 +46,7 @@ View the CAD files in ./cad, or preferably in the onshape document
 |Solder paste | 4.36 | https://www.aliexpress.us/item/3256809207808464.html? | soldering SMDs to the PCB |
 | Threaded inserts | 1.73 | https://www.aliexpress.us/item/3256803396040989.html? | TVC assembly |
 | Bearings | 6.26 | https://www.aliexpress.us/item/3256802138888272.html? | TVC Assembly |
-| 5x Threaded acrew } 7.05 | https://www.aliexpress.us/item/3256806603708402.html? | General connections |
+| 5x Threaded acrew | 7.05 | https://www.aliexpress.us/item/3256806603708402.html? | General connections |
 | Insert Nuts | 4.98 | https://www.aliexpress.us/item/3256808011211144.html? | General connections |
 
 Notes on our vendors:
